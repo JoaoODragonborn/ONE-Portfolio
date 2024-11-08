@@ -18,7 +18,7 @@ body
 {
     display: flex;
     flex-direction: column;
-    gap: 50px;   
+    gap: 35px;   
     background-color: var(--main-background-color);
     margin: 0;
     align-items: center;
@@ -109,25 +109,12 @@ main
 .limiters
 {
     width: 80%;
-    margin-block: 3%;
+    
 }
 
 .blue_section
 {
     background-color: var(--blue-section-color);    
-}
-
-#about-me
-{
-    display: flex;
-    gap: 60px;
-    align-items: center;
-}
-
-#about-me > img
-{
-    width: 300px;
-    height: 256px;
 }
 
 #presentation
@@ -137,6 +124,7 @@ main
     justify-content: center;
     gap: 100px;
     flex-direction: row-reverse;
+    padding-block: 3%;
 }
 
 #presentation > img 
@@ -144,6 +132,61 @@ main
     height: 350px;
     width: 350px;
     border-radius: 10%;
+}
+
+#about-me
+{
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    padding-block: 3%;
+}
+
+#about-me > img
+{
+    width: 300px;
+    height: 256px;
+}
+
+#hobbies-skills
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block-list
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-family: "Raleway";
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.block
+{
+    background-color: white;
+    border-radius: 10%;
+    flex-grow: 1;    
+}
+
+.spacer
+{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 2 * 20px);
+    gap: 10px;
+}
+
+.spacer > img
+{
+    width: 50px;
+    height: 50px;
 }
 
 .raleway
@@ -272,6 +315,11 @@ a
         gap: 40px;
     }
 
+    .block
+    {   
+        width: 30%;
+    }
+
     p, .presentation__navbar
     {
         font-size: 15px;
@@ -331,6 +379,17 @@ a
         flex-direction: column;
         justify-content: center;
         margin-block: 10%;
+    }
+
+    .block
+    {   
+        min-width: 40%;
+    }
+
+    .spacer > img
+    {
+        width: 40px;
+        height: 40px;
     }
 
     h1
