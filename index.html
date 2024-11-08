@@ -7,25 +7,101 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header class="header">
-        <div class="logo">João Pedro</div>
-        <nav class="nav-bar">
-            <ul class="nav-bar__list">
-                <li class="nav-bar__list-element">Sobre mim</li>
-                <li class="nav-bar__list-element">Skills</li>
-                <li class="nav-bar__list-element">Hobbies</li>
-                <li class="nav-bar__list-element">Formação</li>
-                <li class="nav-bar__list-element">Projetos</li>
-                <li class="nav-bar__list-element">jp1792464@gmail.com</li>
-            </ul>
-        </nav>
+    <header id="header">
+        <div id="header_div">
+            <div class="logo">
+                <a class="undecored-link raleway bold between" href="#">
+                    <img src="assets/swords.png" alt="" srcset="">
+                    <span>Joao Pedro</span>
+                </a>
+            </div>
+            <nav class="nav-bar">
+                <ul class="nav-bar__list undecored-list horizontal-list">
+                    <li class="nav-bar__list-element">
+                        <a class="undecored-link raleway" href="#about-me">Sobre mim</a>
+                    </li>
+                    <li class="nav-bar__list-element">
+                        <a class="undecored-link raleway" href="#hobbies-soft_skills">Skills</a>
+                    </li>
+                    <li class="nav-bar__list-element">
+                        <a class="undecored-link raleway" href="#grad-courses">Hobbies</a>
+                    </li>
+                    <li class="nav-bar__list-element">
+                        <a class="undecored-link raleway" href="#programming-xp">Formação</a>
+                    </li>
+                    <li class="nav-bar__list-element">
+                        <a class="undecored-link raleway" href="#touch-form">Projetos</a>
+                    </li>
+                    <li class="nav-bar__list-element raleway bold">jp1792464@gmail.com</li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <section class="about-me"></section>
-    <section class="hobbies-soft_skills"></section>
-    <section class="gad-courses"></section>
-    <section class="programming-xp"></section>
-    <section class="touch-form"></section>
-    <footer class="footer"></footer>
+
+    <main>
+        <section class="main__section" >
+            <div class="limiters" id="presentation">
+                <img id="profile-pic" src="assets/profile.png" alt="profile-picture">
+                <div id="presentation_text">
+                    <h1 class="raleway bold" >João Pedro Ferreira Alves (JoaoODragonborn)</h1>
+                    <p class="raleway">Sou graduando em Engenharia de Software pela Universidade de Brasília (UnB), estou participando do projeto Oracle ONE na Alura e também estou cursando o bootcamp de Quality Assurance na Atlântico Avanti.</p>
+                    <nav>
+                        <ul class="undecored-list horizontal-list">
+                            <li>
+                                <a class="presentation__navbar undecored-link raleway" href="">
+                                    <span>Github</span>
+                                    <img src="assets/arrow.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                
+                                <a class="presentation__navbar undecored-link raleway" href="">
+                                    <span>LinkedIn</span>
+                                    <img src="assets/arrow.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                
+                                <a class="presentation__navbar undecored-link raleway" href="">
+                                    <span>Currículo</span>
+                                    <img src="assets/arrow.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <section class="main__section blue_section" id="about-me">
+                <div class="limiters">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, sequi fuga ducimus vitae molestias laboriosam commodi, totam neque distinctio fugiat ullam esse, omnis quidem expedita natus ipsa! Est, consequatur eum.
+                    </p>
+                </div>
+        </section>
+        <section class="main__section" id="hobbies-soft_skills">
+            <div class="limiters">
+                
+            </div>
+        </section>
+        <section class="main__section"        id="grad-courses">
+            <div class="limiters">
+                
+            </div>
+        </section>
+        <section class="main__section"      id="programming-xp">
+            <div class="limiters">
+                
+            </div>
+        </section>
+        <section class="main__section"          id="touch-form">
+            <div class="limiters">
+                
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer"></footer>
 
 
 </body>
