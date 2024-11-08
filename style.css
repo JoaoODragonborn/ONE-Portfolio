@@ -57,6 +57,13 @@ main
     width: 80%;
 }
 
+.between
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
 .nav-bar__list
 {
     justify-content: space-between;
@@ -82,11 +89,6 @@ main
     padding-inline: 0;
 }
 
-.horizontal-list > li
-{
-    
-}
-
 .undecored-link
 {
     text-decoration: none;
@@ -99,38 +101,45 @@ main
     border: 0;
     padding: 0;
     justify-content: center;
-    display: flex;
     align-items: center;
+    display: flex;
     width: 100%;
 }
 
 .limiters
 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 100px;
-    
     width: 80%;
+    margin-block: 3%;
 }
 
 .blue_section
 {
-    background-color: var(--blue-section-color);
+    background-color: var(--blue-section-color);    
+}
+
+#about-me
+{
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+#about-me > img
+{
+    width: 300px;
+    height: 256px;
 }
 
 #presentation
 {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
     flex-direction: row-reverse;
 }
 
-#about-me
-{
-    background-color: var(--blue-section-color);
-}
-
-.limiters > img 
+#presentation > img 
 {
     height: 350px;
     width: 350px;
@@ -173,11 +182,16 @@ a
         gap: 40px;
     }
  
-    .limiters > img 
+    .presentation > img 
     {
         height: 300px;
         width: 300px;
-        border-radius: 10%;
+    }
+
+    #about-me > img
+    {
+        width: 250px;
+        height: 206px;
     }
     
     #header_div
@@ -194,7 +208,6 @@ a
     .horizontal-list > li
     {
         font-size: var(--small-font-size);
-
     }
 
     p
@@ -226,13 +239,18 @@ a
         gap: 40px;
     }
  
-    .limiters > img 
+    #presentation > img 
     {
         height: 145px;
         width: 145px;
-        border-radius: 10%;
     }
     
+    #about-me > img
+    {
+        width: 150px;
+        height: 128px;
+    }
+
     #header_div
     {
         width: 90%;
@@ -242,6 +260,16 @@ a
     h1
     {
         font-size: 22px;
+    }
+
+    #presentation
+    {
+        gap: 50px;
+    }
+
+    #about-me
+    {
+        gap: 40px;
     }
 
     p, .presentation__navbar
@@ -273,13 +301,18 @@ a
         gap: 40px;
     }
  
-    .limiters > img 
+    #presentation > img 
     {
         height: 200px;
         width: 200px;
-        border-radius: 10%;
     }
     
+    #about-me > img
+    {
+        width: 100px;
+        height: 90px;
+    }
+
     #header_div
     {
         width: 90%;
@@ -289,6 +322,15 @@ a
     #presentation
     {
         flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    #about-me
+    {
+        flex-direction: column;
+        justify-content: center;
+        margin-block: 10%;
     }
 
     h1
